@@ -175,6 +175,7 @@ nav ul li a:hover {
   justify-content:left;
   align-items: left;
   padding:5%;
+  text-align: center;
 }
 
 input {
