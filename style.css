@@ -1,0 +1,237 @@
+* {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+  }
+
+
+  /* header starts here */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+  }
+
+  header nav ul {
+    padding: 1rem;
+    font-size: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  } 
+
+  nav ul li {
+    padding: 0.5rem;
+  }
+
+  .nav-nav {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-nav:hover {
+    font-size: 1.2rem;
+    background-color: #b6cdbd;
+  }
+
+
+  /* About starts here */
+
+  #About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/L3.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  #About h1 {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+
+  #About button {
+    background-color: #b6cdbd;
+    box-shadow: #7b887f;
+    font-size: 15px;
+    border-radius: 5px;
+    transition-property: transform;
+    transition-duration: 0.10s;
+  }
+
+  #About button:hover {
+    transform: scale(1.1);
+  }
+
+  /* products start here */
+
+  #products-section {
+    padding: 5%;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product { 
+    background-color: #acc6aa;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow:2px 2px #7b887f;
+    width: 50rem;
+    height: 40rem;
+  }
+
+  .img--products {
+    width: 200px;
+    height: 300px;
+    transition-property: transform;
+    transition-duration: 0.30s;
+  }
+
+  #products-section button {
+    background-color:#fff;
+    box-shadow: #7b887f;
+    font-size: 17px;
+    border-radius: 5px;
+    transition-property: transform;
+    transition-duration: 0.10s;
+  }
+
+  #products-section button:hover {
+    transform: scale(1.1);
+  }
+  .img--products:hover {
+    transform: scaleX(1.2);
+  }
+
+
+  /* reviews starts here */
+
+  #reviews {
+    background-color:#fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding:5%;
+  }
+
+  .customer-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .customer {
+    background-color: #fff;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    box-shadow:2px 2px #7b887f;
+    width: 30rem;
+    height: 10rem;
+  }
+
+
+  /* subscribtion starts here */
+
+#subscribtion {
+  background-color:#b6cdbd;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction:column;
+  justify-content:left;
+  align-items: left;
+  padding:5%;
+}
+
+input {
+  width: 27%;
+  box-sizing:content-box;
+  border-radius: 5px;
+}
+
+
+  /* footer starts here */
+
+  footer {
+    background-color:#5c715e;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  /* media queries */
+  /* desktop 1024px no differences occures */
+
+  @media screen and (max-width: 768px) { /* tablets */
+    .products {
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+
+    .product { 
+      background-color: #acc6aa;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      box-shadow:2px 2px #7b887f;
+      width:auto;
+      height:auto;
+    }
+    
+  }
+
+  
+  @media screen and (max-width: 600px) { /* mobile phones */
+    .nav-nav:hover {
+      font-size: 1rem;
+      color: #5c715e;
+    }
+
+    #About {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image:none;
+      background-size: none;
+      background-repeat: none;
+      background-position: none;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+
+    .product { 
+      background-color: #acc6aa;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      box-shadow:2px 2px #7b887f;
+      width:auto;
+      height:auto;
+    }
+    
+  }
